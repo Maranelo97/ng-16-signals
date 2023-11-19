@@ -1,0 +1,21 @@
+<div
+  class="card"
+  style="width: 18rem;">
+  <img
+    [src]="product.image"
+    class="card-img-top"
+   [alt]="product.title" >
+  <div class="card-body">
+    <h5 class="card-title">{{product.title}}</h5>
+
+    <div class="d-flex justify-content-between">
+      <span>Precio: {{product.price}}</span>
+      <span>Stock: {{product.rating.count}}</span>
+    </div>
+    <button
+    (click)="addProduct(product)"
+      class="btn btn-primary">
+      Agregar
+    </button>
+  </div>
+</div>
